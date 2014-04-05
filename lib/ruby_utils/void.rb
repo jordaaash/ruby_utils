@@ -1,3 +1,5 @@
+require 'singleton'
+
 module RubyUtils
   class Void
     include Singleton
