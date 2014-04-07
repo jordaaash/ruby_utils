@@ -3,7 +3,9 @@ module RubyUtils
     def self.extended (base)
       base.instance_eval do
         self.abstract_class = true if respond_to? :abstract_class=
-        @abstract_class = true unless instance_variable_defined? :@abstract_class
+        unless instance_variable_defined? :@abstract_class
+          @abstract_class = true
+        end
       end
     end
 
