@@ -1,5 +1,7 @@
+require 'active_support/hash_with_indifferent_access'
+
 module RubyUtils
-  class LazyHash < Hash
+  class LazyIndifferentHash < HashWithIndifferentAccess
     attr_accessor :args
 
     def initialize (*args)
@@ -23,4 +25,4 @@ module RubyUtils
   end
 end
 
-LazyHash = RubyUtils::LazyHash
+LazyIndifferentHash = RubyUtils::LazyIndifferentHash

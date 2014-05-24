@@ -29,3 +29,5 @@ module RubyUtils
     end
   end
 end
+
+AbstractClass = RubyUtils::AbstractClass

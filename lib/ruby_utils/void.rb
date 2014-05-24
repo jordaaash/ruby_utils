@@ -10,3 +10,5 @@ module RubyUtils
     end
   end
 end
+
+Void = RubyUtils::Void
