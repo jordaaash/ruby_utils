@@ -5,6 +5,10 @@ module RubyUtils
   extend ActiveSupport::Autoload
 
   autoload :AbstractClass
+  autoload :IndifferentSet
   autoload :LazyHash
+  autoload :LazyIndifferentHash
+  autoload :ScopedLazyHash
+  autoload :ScopedLazyIndifferentHash
   autoload :Void
 end
