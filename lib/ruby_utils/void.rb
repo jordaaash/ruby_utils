@@ -4,7 +4,7 @@ module RubyUtils
   class Void
     include Singleton
 
-    instance_methods.each { |m| undef_method(m) unless m =~ /\A(__|object_id)/ }
+    instance_methods.each { |m| undef_method(m) unless m =~ /\A__|object_id/ }
 
     def method_missing (*)
     end

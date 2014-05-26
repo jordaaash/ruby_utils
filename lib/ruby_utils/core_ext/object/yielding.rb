@@ -1,5 +1,5 @@
 class Object
-  def yielding (*args)
-    yield(*args)
+  def yielding (*args, &block)
+    yield *args
   end
 end

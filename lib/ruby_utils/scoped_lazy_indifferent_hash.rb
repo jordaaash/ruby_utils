@@ -1,5 +1,3 @@
-require 'ruby_utils/lazy_indifferent_hash'
-
 module RubyUtils
   class ScopedLazyIndifferentHash < LazyIndifferentHash
     attr_accessor :scope

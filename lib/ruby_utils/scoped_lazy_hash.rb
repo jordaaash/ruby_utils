@@ -1,5 +1,3 @@
-require 'ruby_utils/lazy_hash'
-
 module RubyUtils
   class ScopedLazyHash < LazyHash
     attr_accessor :scope

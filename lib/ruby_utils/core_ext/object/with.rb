@@ -1,6 +1,5 @@
 class Object
-  def with (instance, *args, &block)
-    instance.instance_exec *args, &block
-    instance
+  def with (scope, *args, &block)
+    scope.instance_exec(*args, &block)
   end
 end
