@@ -9,8 +9,8 @@ rescue Bundler::BundlerError => e
   $stderr.puts 'Run `bundle install` to install missing gems'
   exit e.status_code
 end
-require 'rake'
 
+require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
